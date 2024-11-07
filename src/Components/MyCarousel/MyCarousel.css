@@ -1,0 +1,36 @@
+.carousel-item1 {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../../Assets/Images//carousel.jpg);
+}
+
+.carousel-item2 {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../../Assets/Images/carousel1.jpg);
+}
+
+.carousel-item3 {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../../Assets/Images/carousel3.jpg);
+}
+
+.carousel-item1, .carousel-item2, .carousel-item3 {
+  width: 100%;
+  height: auto;
+  padding-top: 45.4%; /* Tỷ lệ chiều cao so với chiều rộng để giữ nguyên tỷ lệ 1280x581 */
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

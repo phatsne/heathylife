@@ -1,0 +1,28 @@
+.navbar {
+  background-color:#ffffff ;
+}
+
+.navbar .navbar-toggler {
+  border-color: white;
+}
+
+.navbar .navbar-toggler-icon,
+.navbar .navbar-brand img {
+  filter: invert();
+}
+
+.navbar .navbar-brand img {
+  /* transform: rotate(45deg); */
+  width: 1.5rem; /*1rem = 16px*/
+}
+.nav-link, #about-dropdown .nav-link {
+  color: #333;
+  font-weight: 500;
+  margin-left: 15px;
+  display: inline-block; 
+}
+
+#about-dropdown {
+  display: inline-block;
+  margin-left: 15px;
+}
