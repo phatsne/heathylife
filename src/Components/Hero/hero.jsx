@@ -8,7 +8,7 @@ import Hero3 from '../../Assets/Images/hero3.jpg';
 const HeroSection = () => {
   return (
     <Container className="my-5">
-        <div className="py-5 mx-5">
+        <div className="mx-5">
             <div className="text-center">
                 <div className='p-5 text-center'>
                     <h6 style={{ color: "#ff6b6b", fontWeight: "bold" }}>Khóa Học Đề Xuất</h6>

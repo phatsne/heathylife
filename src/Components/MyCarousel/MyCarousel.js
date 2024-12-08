@@ -2,7 +2,7 @@ import React from "react";
 import "./MyCarousel.css";
 import Carousel from "react-bootstrap/carousel";
 
-function MyCarousel() {
+const MyCarousel = () => {
   return (
     <div className="Carousel">
       <Carousel>

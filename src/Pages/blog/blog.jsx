@@ -1,7 +1,7 @@
 import React from "react";
 import './blog.css';
 
-function Blog() {
+const Blog = () => {
     return ( 
         <div>
             

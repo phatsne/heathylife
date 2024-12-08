@@ -30,27 +30,27 @@ const NavigationBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link as={Link} to="/" className="nav-link active">
-              Home
+              Trang chủ
             </Nav.Link>
-            <Nav.Link as={Link} to="aboutus" className="nav-link active">
-              About Us
+            <Nav.Link as={Link} to="/aboutus" className="nav-link active">
+              Về chúng tôi
             </Nav.Link>
             {/* <NavDropdown title="About Us" id="about-dropdown" className="nav-link">
               <NavDropdown.Item as={Link} to="/about/history">Option 1</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/about/teachers">Option 2</NavDropdown.Item>
             </NavDropdown> */}
-            <Nav.Link as={Link} to="/" className="nav-link">
+            <Nav.Link as={Link} to="/blog" className="nav-link">
               Online Yoga
             </Nav.Link>
             <Nav.Link as={Link} to="/courses" className="nav-link">
-              Courses
+              Khóa học
             </Nav.Link>
-            <Nav.Link as={Link} to="/schedule" className="nav-link">
-              Schedule
+            <Nav.Link as={Link} to="/calculate" className="nav-link">
+              Công cụ hỗ trợ sức khỏe
             </Nav.Link>
-            <Nav.Link as={Link} to="/workshops" className="nav-link">
+            {/* <Nav.Link as={Link} to="/workshops" className="nav-link">
               Workshops
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

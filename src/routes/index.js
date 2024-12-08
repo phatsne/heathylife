@@ -12,6 +12,7 @@ import home from "../Pages/home/home";
 import courses from "../Pages/courses/courses";
 import blog from "../Pages/blog/blog";
 import AboutUs from "../Pages/aboutus/aboutus";
+import calculate from "../Pages/calculate/page";
 
 const routes = [
     {
@@ -32,6 +33,11 @@ const routes = [
     {
         path: '/about-us',
         page: AboutUs,
+        isShowHeader: true,
+    },
+    {
+        path: '/calculate',
+        page: page,
         isShowHeader: true,
     },
     {

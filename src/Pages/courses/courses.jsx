@@ -1,7 +1,7 @@
 import React from "react";
 import './courses.css';
 
-function Courses() {
+const Courses = () => {
     return ( 
         <div>
             Courses

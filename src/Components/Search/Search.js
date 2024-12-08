@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
-function SearchForm() {
+const SearchForm = () => {
   return (
     <div className="position-relative">
 

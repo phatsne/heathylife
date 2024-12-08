@@ -6,7 +6,7 @@ import Hero from '../../Components/Hero/hero'
 import About from '../../Components/About/about';
 import Favourite from '../../Components/Favourite/favourite'
 
-function Home() {
+const Home = () => {
     return (
         <div className='Homepage'>
             <Carousel />

@@ -58,7 +58,7 @@ const About = () => {
               </div>
             </Col>
           </Row>
-          <Button variant="success" className="mt-3">Xem Thêm Về Chúng Tôi</Button>
+          <Button variant="success" className="mt-3 ">Xem Thêm Về Chúng Tôi</Button>
         </Col>
       </Row>
     </Container>
