@@ -4,14 +4,22 @@ import { Box, Typography, LinearProgress, CardMedia } from '@mui/material';
 import Grid from "@mui/material/Grid2";
 
 const data = [
-  { name: 'Body Balance', value: 62 },
-  { name: 'Daily Exercise', value: 88 },
-  { name: 'Physical Activity', value: 75 },
+  { name: 'Cân bằng cơ thể', value: 62 },
+  { name: 'Tập thể dục hằng ngày', value: 88 },
+  { name: 'Các hoạt động ngoài trời', value: 75 },
 ];
 
 const GridBarChartWithImage = () => {
   return (
-    <Box sx={{ flexGrow: 1, p: 4 }}>
+    <Box
+      sx={{
+        display: 'flex',           // Thiết lập flexbox để căn giữa
+        flexDirection: 'column',   // Căn theo chiều dọc
+        alignItems: 'center',      // Căn theo chiều ngang
+        justifyContent: 'center',  // Căn theo chiều dọc
+        p: 4,
+      }}
+    >
       <Grid container spacing={4}>
         {/* Phần trái: Tiêu đề, mô tả, và biểu đồ */}
         <Grid
@@ -22,7 +30,7 @@ const GridBarChartWithImage = () => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'flex-start',
-            gap: 4, // Khoảng cách giữa các phần tử
+            gap: 4,
           }}
         >
             <Typography
@@ -43,7 +51,7 @@ const GridBarChartWithImage = () => {
                 <br /> 
                 một cuộc sống khỏe mạnh, hạnh phúc và đầy đủ hơn.
             </Typography>
-          {/* Biểu đồ dạng thanh */}
+
           {data.map((item, index) => (
             <Box
               key={index}
@@ -51,10 +59,9 @@ const GridBarChartWithImage = () => {
                 width: '100%',
                 display: 'flex',
                 flexDirection: 'column',
-                gap: 1, // Khoảng cách giữa nhãn và thanh tiến trình
+                gap: 1,
               }}
             >
-              {/* Nhãn */}
               <Typography
                 variant="body1"
                 sx={{
@@ -65,15 +72,13 @@ const GridBarChartWithImage = () => {
                 {item.name}
               </Typography>
 
-              {/* Thanh tiến trình với phần trăm */}
               <Box
                 sx={{
                   display: 'flex',
                   alignItems: 'center',
-                  gap: 2, // Khoảng cách giữa thanh tiến trình và phần trăm
+                  gap: 2,
                 }}
               >
-                {/* Thanh tiến trình */}
                 <Box sx={{ flexGrow: 1 }}>
                   <LinearProgress
                     variant="determinate"
@@ -86,7 +91,6 @@ const GridBarChartWithImage = () => {
                     }}
                   />
                 </Box>
-                {/* Phần trăm */}
                 <Typography
                   variant="body1"
                   sx={{
@@ -101,8 +105,6 @@ const GridBarChartWithImage = () => {
             </Box>
           ))}
         </Grid>
-
-        {/* Phần phải: Hình ảnh */}
         <Grid
           item
           xs={12}

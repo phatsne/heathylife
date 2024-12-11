@@ -43,16 +43,16 @@ const AboutUs = () => {
                 color: '#ffffff',
                 }}
             >
-                About Us
+                Về chúng tôi
                 <Typography
                     variant="body1"
                     sx={{ mb: 1,fontSize: '16px',}}
                 >
-                    Who We Are: We are a passionate team committed to innovation and excellence.
+                    Chúng tôi là ai: Chúng tôi là một đội ngũ đầy nhiệt huyết, cam kết đổi mới và xuất sắc.
                 </Typography>
             </Typography>
         </Box>
-        {/* Main content */}
+        
         <Box sx={{ p: 4 }}>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>

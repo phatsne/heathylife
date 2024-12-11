@@ -1,0 +1,36 @@
+footer {
+    font-family: Arial, sans-serif;
+  }
+  
+  footer h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  footer p, footer ul {
+    color: #333;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  footer ul li {
+    margin-bottom: 8px;
+  }
+  
+  footer .social-links a {
+    color: #333;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  footer .social-links a:hover {
+    color: #90EE90;
+  }
+  
+  footer .bi {
+    font-size: 1.5rem;
+  }
+  

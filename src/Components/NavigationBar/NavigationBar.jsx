@@ -3,6 +3,9 @@ import "./NavigationBar.css";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
+import { Typography } from "@mui/material";
+
+
 // import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
 
@@ -11,18 +14,14 @@ const NavigationBar = () => {
     <Navbar expand="lg" className="navigation-bar position-absolute w-100 z-2">
       <Container>
         <Navbar.Brand className="d-flex align-items-center">
-          {/* <Link to="/" className="text-decoration-none text-dark d-flex align-items-center">
-            <img
-              src="link/to/your-logo.png"
-              alt="Sivananda Logo"
-              className="navbar-logo"
-            />
-            <div className="navbar-title ms-2">
-              <span>New Delhi</span>
-              <br />
-              <strong>Sivananda Yoga Vedanta Nataraja Centre</strong>
-            </div>
-          </Link> */}
+          <Link to="/" className="text-decoration-none text-dark d-flex align-items-center">
+            <Typography
+              style={{ fontFamily: "'Pacifico', cursive", fontSize: "1.5rem",}}
+              
+            >
+              HeathyLife
+            </Typography>
+          </Link>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

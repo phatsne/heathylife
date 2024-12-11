@@ -1,5 +1,5 @@
 .navbar {
-  background-color:#ebfff7 ;
+  background-color:#90DB90 ;
 }
 
 .navbar .navbar-toggler {
@@ -12,8 +12,7 @@
 }
 
 .navbar .navbar-brand img {
-  /* transform: rotate(45deg); */
-  width: 1.5rem; /*1rem = 16px*/
+  width: 1.5rem;
 }
 .nav-link, #about-dropdown .nav-link {
   color: #333;
