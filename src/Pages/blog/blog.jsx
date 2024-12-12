@@ -1,12 +1,13 @@
 import React from "react";
-import './blog.css';
+import Yogaonline from "./_component/coursesonline"
 
 const Blog = () => {
-    return ( 
-        <div>
-            
+    return (
+        <div style={{padding: "100px"}}>
+            <Yogaonline />
         </div>
     )
-}
-
-export default Blog;
+  };
+  
+  export default Blog;
+  

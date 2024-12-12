@@ -12,7 +12,8 @@ import home from "../Pages/home/home";
 import courses from "../Pages/courses/courses";
 import blog from "../Pages/blog/blog";
 import AboutUs from "../Pages/aboutus/aboutus";
-import calculate from "../Pages/calculate/page";
+import Calculate from "../Pages/calculate/page";
+import login from "../Pages/login/login"
 
 const routes = [
     {
@@ -37,7 +38,12 @@ const routes = [
     },
     {
         path: '/calculate',
-        page: page,
+        page: Calculate,
+        isShowHeader: true,
+    },
+    {
+        path: '/login',
+        page: login,
         isShowHeader: true,
     },
     {
