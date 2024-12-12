@@ -18,7 +18,7 @@ const Footer = () => {
                   <li></li>
                   <li></li>
                 </ul>
-                <p>Email: trieucuongphatIT@gmail.com</p>
+                <p>Email: mtam2003it@gmail.com</p>
               </Col>
               <Col md={4}>
                 <h5>KHÓA HỌC</h5>
@@ -50,7 +50,7 @@ const Footer = () => {
                     <i className="bi bi-instagram"></i>
                   </a>
                 </div>
-                <p className="mt-3">&copy; Phatsne - All rights reserved.</p>
+                <p className="mt-3">&copy; MINH TÂM - All rights reserved.</p>
               </Col>
             </Row>
           </Box>
