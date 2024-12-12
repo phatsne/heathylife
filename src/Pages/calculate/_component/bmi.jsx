@@ -66,7 +66,7 @@ const BmiCalculator = () => {
       sx={{
         display: "flex",
         flexDirection: "column",
-        padding: "20px",
+        paddingTop: "20px",
       }}
     >
       <Box

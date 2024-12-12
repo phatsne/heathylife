@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import About1 from "../../Assets/Images/about.jpg";
-
 import './about.css';
 
 const About = () => {

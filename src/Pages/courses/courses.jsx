@@ -3,7 +3,7 @@ import './courses.css';
 
 const Courses = () => {
     return ( 
-        <div>
+        <div style={{padding: "100px"}}>
             Courses
         </div>
     )

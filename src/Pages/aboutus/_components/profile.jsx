@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Typography, Avatar, Container } from '@mui/material';
+import CEO from "../../../Assets/Images/CEO_MinhTam.jpg"
 
 const ProfilePage = () => {
   return (
@@ -7,7 +8,7 @@ const ProfilePage = () => {
         <Box
             sx={{
             height: '100px',
-            backgroundImage: 'url("/path-to-background.jpg")',
+            backgroundImage: 'url("/")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             }}
@@ -15,7 +16,7 @@ const ProfilePage = () => {
         <Container sx={{ textAlign: 'center', mt: -7 }}>
             <Avatar
                 alt="MinhTam"
-                src="/path-to-avatar.jpg"
+                src={CEO}
                 sx={{
                     width: 120,
                     height: 120,
@@ -40,7 +41,10 @@ const ProfilePage = () => {
                     fontStyle: 'italic',
                 }}
             >
-                Tôi Tên là Nguyễn Ngọc Minh Tâm là CEO của Heathylife
+                Tôi tên là Nguyễn Ngọc Minh Tâm, là CEO của HealthyLife 
+                một nền tảng trực tuyến chuyên cung cấp các khóa học yoga và các công cụ hỗ trợ chăm sóc sức khỏe. 
+                Với niềm đam mê sâu sắc dành cho việc nâng cao chất lượng cuộc sống thông qua lối sống lành mạnh, 
+                tôi đã sáng lập HealthyLife với mục tiêu mang lại những giá trị thiết thực và ý nghĩa nhất đến cộng đồng.
             </Typography>
             <Typography
                 variant="body2"

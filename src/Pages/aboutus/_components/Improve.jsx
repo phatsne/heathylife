@@ -13,10 +13,10 @@ const GridBarChartWithImage = () => {
   return (
     <Box
       sx={{
-        display: 'flex',           // Thiết lập flexbox để căn giữa
-        flexDirection: 'column',   // Căn theo chiều dọc
-        alignItems: 'center',      // Căn theo chiều ngang
-        justifyContent: 'center',  // Căn theo chiều dọc
+        display: 'flex',          
+        flexDirection: 'column',  
+        alignItems: 'center',      
+        justifyContent: 'center',  
         p: 4,
       }}
     >

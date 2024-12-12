@@ -4,25 +4,27 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import PinterestIcon from '@mui/icons-material/Pinterest';
 import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
+import CEO from "../../../Assets/Images/CEO_MinhTam.jpg"
+import Phat from "../../../Assets/Images/Member.jpg"
 
 const teamMembers = [
   {
     name: 'Phát Triệu',
     role: 'Huấn luyện viên Yoga',
     description: 'Body Balance không chỉ là bài tập mà còn là nghệ thuật sống, và Jacob Spencer sẽ truyền cảm hứng để bạn yêu thương cơ thể mình hơn mỗi ngày.',
-    img: 'https://via.placeholder.com/150',
+    img: Phat,
   },
   {
     name: 'Minh Tâm',
     role: 'Giáo viên Yoga nhịp điệu',
     description: 'kết hợp nhịp điệu âm nhạc với sự uyển chuyển của yoga, tạo nên một trải nghiệm độc đáo và đầy năng lượng cho học viên trong mỗi buổi tập',
-    img: 'https://via.placeholder.com/150',
+    img: CEO,
   },
   {
-    name: 'Nam Trần',
+    name: 'Tâm Tâm',
     role: 'Zumba Instructor',
     description: 'Với sự nhiệt huyết và chuyên môn cao, Lori luôn truyền cảm hứng để bạn vừa tập luyện, vừa tận hưởng niềm vui trên từng bước nhảy.',
-    img: 'https://via.placeholder.com/150',
+    img: CEO,
   },
 ];
 
