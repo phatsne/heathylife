@@ -51,7 +51,7 @@ const Footer = () => {
                   </a>
                 </div>
                 <p className="mt-3">&copy; MINH TÂM - All rights reserved.</p>
-              </Col>
+              </Col> 
             </Row>
           </Box>
         </Box>
