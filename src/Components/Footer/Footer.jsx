@@ -50,7 +50,7 @@ const Footer = () => {
                     <i className="bi bi-instagram"></i>
                   </a>
                 </div>
-                <p className="mt-3">&copy; N. MINH TÂM - All rights reserved.</p>
+                <p className="mt-3">&copy; NGỌC MINH TÂM - All rights reserved.</p>
               </Col> 
             </Row>
           </Box>
