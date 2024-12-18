@@ -1,0 +1,102 @@
+[
+  {
+    "_id": "6762b2e690d0486c460c4a2c",
+    "name": "Rustic Plastic Chair",
+    "image": "https://placeimg.com/640/480/tech",
+    "type": "Furniture",
+    "price": 59.99,
+    "countInStock": 10,
+    "rating": 4.5,
+    "description": "A comfortable chair for your living room."
+  },
+  {
+    "_id": "6762b2e690d0486c460c4a2d",
+    "name": "Modern Wooden Table",
+    "image": "https://placeimg.com/640/480/tech",
+    "type": "Furniture",
+    "price": 129.99,
+    "countInStock": 15,
+    "rating": 4.7,
+    "description": "Stylish and durable wooden table for dining."
+  },
+  {
+    "_id": "6762b2e690d0486c460c4a2e",
+    "name": "Ergonomic Desk Lamp",
+    "image": "https://placeimg.com/640/480/tech",
+    "type": "Office",
+    "price": 35.5,
+    "countInStock": 20,
+    "rating": 4.3,
+    "description": "Perfect lamp for your office desk."
+  },
+  {
+    "_id": "6762b2e690d0486c460c4a2f",
+    "name": "Wireless Bluetooth Speaker",
+    "image": "https://placeimg.com/640/480/tech",
+    "type": "Electronics",
+    "price": 99.99,
+    "countInStock": 30,
+    "rating": 4.8,
+    "description": "High-quality wireless speaker for music lovers."
+  },
+  {
+    "_id": "6762b2e690d0486c460c4a30",
+    "name": "Portable Power Bank",
+    "image": "https://placeimg.com/640/480/tech",
+    "type": "Electronics",
+    "price": 39.99,
+    "countInStock": 50,
+    "rating": 4.2,
+    "description": "Charge your devices on the go with this portable power bank."
+  },
+  {
+    "_id": "6762b2e690d0486c460c4a31",
+    "name": "Luxury Handbag",
+    "image": "https://placeimg.com/640/480/fashion",
+    "type": "Fashion",
+    "price": 199.99,
+    "countInStock": 8,
+    "rating": 4.6,
+    "description": "Premium leather handbag for everyday use."
+  },
+  {
+    "_id": "6762b2e690d0486c460c4a32",
+    "name": "Men's Running Shoes",
+    "image": "https://placeimg.com/640/480/fashion",
+    "type": "Fashion",
+    "price": 89.99,
+    "countInStock": 20,
+    "rating": 4.4,
+    "description": "Comfortable running shoes designed for athletes."
+  },
+  {
+    "_id": "6762b2e690d0486c460c4a33",
+    "name": "Smartwatch with Heart Monitor",
+    "image": "https://placeimg.com/640/480/tech",
+    "type": "Electronics",
+    "price": 149.99,
+    "countInStock": 25,
+    "rating": 4.6,
+    "description": "A smartwatch with heart rate monitor and fitness tracker."
+  },
+  {
+    "_id": "6762b2e690d0486c460c4a34",
+    "name": "Adjustable Laptop Stand",
+    "image": "https://placeimg.com/640/480/tech",
+    "type": "Office",
+    "price": 24.99,
+    "countInStock": 40,
+    "rating": 4.5,
+    "description": "Keep your laptop ergonomically positioned with this adjustable stand."
+  },
+  {
+    "_id": "6762b2e690d0486c460c4a35",
+    "name": "Wireless Earbuds",
+    "image": "https://placeimg.com/640/480/tech",
+    "type": "Electronics",
+    "price": 59.99,
+    "countInStock": 100,
+    "rating": 4.7,
+    "description": "True wireless earbuds with excellent sound quality."
+  }
+]
