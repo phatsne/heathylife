@@ -105,7 +105,7 @@ const Certificates = () => {
             >
               <Box>
                 <Typography variant="caption">Ngày cấp</Typography>
-                <Typography variant="caption" sx={{ fontWeight: 'bold' }}>
+                <Typography variant="caption" sx={{ fontWeight: 'bold', px: 1 }}>
                   {certificate.date}
                 </Typography>
               </Box>
@@ -114,7 +114,7 @@ const Certificates = () => {
                   {certificate.signature}
                 </Typography>
                 <Typography variant="caption" align="right">
-                  Chủ tịch và Giám đốc điều hành
+                  {/* Chủ tịch và Giám đốc điều hành */}
                 </Typography>
               </Box>
             </Box>

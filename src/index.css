@@ -24,8 +24,14 @@ code {
   font-family: "Inter", sans-serif;
 }
 
-body {
+body,html {
   margin: 0;
   box-sizing: border-box;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
   padding: 0;
 }

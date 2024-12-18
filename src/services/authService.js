@@ -11,7 +11,7 @@ export const fetchProtectedData = async () => {
     const token = localStorage.getItem('authToken');
 
     try {
-        const response = await axios.get('http://localhost:3001/api/protected', {
+        const response = await axios.get('http://localhost:5000/api/protected', {
             headers: { Authorization: token },
         });
 
