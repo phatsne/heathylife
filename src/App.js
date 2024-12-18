@@ -11,18 +11,24 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {
   const location = useLocation();
+
+  // Điều kiện để ẩn NavigationBar trên trang Login
   const hideNavRoutes = ["/login"];
 
   return (
     <div className="App">
+      {/* Chỉ hiển thị NavigationBar nếu không ở trang Login */}
       {!hideNavRoutes.includes(location.pathname) && <NavigationBar />}
+
       <Routes>
+        {/* Đặt trang login làm trang mặc định */}
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/calculate" element={<Calculate />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/home" element={<Home />} />  {/* Thêm Home route nếu cần */}
       </Routes>
     </div>
   );
