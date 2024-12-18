@@ -155,9 +155,12 @@ const LoginPage = () => {
 
         <Typography style={{ marginTop: "16px", fontSize: "14px", color: "#757575" }}>
           Don't have an account?{" "}
-          <a href="/register" style={{ color: "#4CAF50" }}>
+          <span
+            style={{ color: "#4CAF50", cursor: "pointer", fontWeight: "bold" }}
+            onClick={() => navigate("/register")}
+          >
             Register
-          </a>
+          </span>
         </Typography>
       </Box>
     </div>

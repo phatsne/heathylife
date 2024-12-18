@@ -1,11 +1,25 @@
-import React from "react";
-import { Container, Typography, Grid, Button, Box } from "@mui/material";
+import React, { useState } from "react";
+import {
+  Container,
+  Typography,
+  Grid,
+  Button,
+  Box,
+  Dialog,
+  DialogContent,
+  DialogTitle,
+  TextField,
+} from "@mui/material";
 import YogaCourses1 from "../../../Assets/Images/YogaCourses1.jpg";
 import YogaCourses2 from "../../../Assets/Images/YogaCourses2.jpg";
 import YogaCourses3 from "../../../Assets/Images/YogaCourses3.jpg";
 import YogaCourses4 from "../../../Assets/Images/YogaCourses4.jpg";
 
 const YogaCourses = () => {
+  const [selectedCourse, setSelectedCourse] = useState(null);
+  const [userInfo, setUserInfo] = useState({ name: "", email: "" });
+  const [cart, setCart] = useState([]);
+
   const courses = [
     {
       title: "Khóa học Solar (Premium)",
@@ -33,15 +47,38 @@ const YogaCourses = () => {
     },
   ];
 
+  // Xử lý mở chi tiết khóa học
+  const handleViewDetails = (course) => {
+    setSelectedCourse(course);
+  };
+
+  // Xử lý nhập thông tin form
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setUserInfo((prev) => ({ ...prev, [name]: value }));
+  };
+
+  // Xử lý thêm vào giỏ hàng
+  const handleAddToCart = () => {
+    if (userInfo.name && userInfo.email) {
+      setCart((prev) => [...prev, { ...selectedCourse, userInfo }]);
+      alert("Khóa học đã được thêm vào giỏ hàng!");
+      setSelectedCourse(null);
+      setUserInfo({ name: "", email: "" });
+    } else {
+      alert("Vui lòng nhập đầy đủ thông tin!");
+    }
+  };
+
   return (
     <Container>
       {/* Phần giới thiệu */}
       <Box textAlign="center" marginBottom={4}>
         <Typography variant="h5" gutterBottom>
-          
+          Các khóa học Yoga
         </Typography>
         <Typography variant="body1" color="textSecondary" paragraph>
-         
+          Hãy chọn khóa học phù hợp để cải thiện sức khỏe và tinh thần của bạn.
         </Typography>
       </Box>
 
@@ -52,7 +89,7 @@ const YogaCourses = () => {
           spacing={4}
           alignItems="center"
           marginBottom={4}
-          key={index}
+          key={course.id}
           direction={index % 2 === 0 ? "row" : "row-reverse"}
         >
           {/* Hình ảnh */}
@@ -60,14 +97,12 @@ const YogaCourses = () => {
             <img
               src={course.image}
               alt={course.title}
-              style={{
-                width: "100%",
-                borderRadius: "8px",
-              }}
+              style={{ width: "100%", borderRadius: "8px" }}
             />
           </Grid>
+
           {/* Nội dung */}
-          <Grid item xs={12} md={6} sx={{ textAlign: "left" }}> 
+          <Grid item xs={12} md={6} sx={{ textAlign: "left" }}>
             <Typography variant="h6" gutterBottom>
               {course.title}
             </Typography>
@@ -80,16 +115,64 @@ const YogaCourses = () => {
                 backgroundColor: "#90EE90",
                 color: "#000",
                 borderRadius: "50px",
-                "&:hover": {
-                  backgroundColor: "#7AC47A",
-                },
+                "&:hover": { backgroundColor: "#7AC47A" },
               }}
+              onClick={() => handleViewDetails(course)}
             >
               Xem ngay
             </Button>
           </Grid>
         </Grid>
       ))}
+
+      {/* Dialog Chi Tiết Khóa Học */}
+      {selectedCourse && (
+        <Dialog open={true} onClose={() => setSelectedCourse(null)} fullWidth>
+          <DialogTitle>{selectedCourse.title}</DialogTitle>
+          <DialogContent>
+            <img
+              src={selectedCourse.image}
+              alt={selectedCourse.title}
+              style={{ width: "100%", borderRadius: "8px", marginBottom: "16px" }}
+            />
+            <Typography paragraph>{selectedCourse.description}</Typography>
+            <TextField
+              label="Họ và Tên"
+              name="name"
+              fullWidth
+              margin="normal"
+              value={userInfo.name}
+              onChange={handleInputChange}
+            />
+            <TextField
+              label="Email"
+              name="email"
+              type="email"
+              fullWidth
+              margin="normal"
+              value={userInfo.email}
+              onChange={handleInputChange}
+            />
+            <Box mt={2} sx={{ display: "flex", justifyContent: "flex-end" }}>
+              <Button
+                variant="outlined"
+                color="secondary"
+                onClick={() => setSelectedCourse(null)}
+                sx={{ marginRight: 2 }}
+              >
+                Đóng
+              </Button>
+              <Button
+                variant="contained"
+                color="primary"
+                onClick={handleAddToCart}
+              >
+                Thêm vào giỏ hàng
+              </Button>
+            </Box>
+          </DialogContent>
+        </Dialog>
+      )}
     </Container>
   );
 };

@@ -21,7 +21,9 @@ const Footer = () => {
                 <p>Email: mtam2003it@gmail.com</p>
               </Col>
               <Col md={4}>
-                <h5>KHÓA HỌC</h5>
+                <Box>
+                  <h5 className='text'> Khóa Học </h5>
+                </Box>
                 <ul>
                   <li>Yoga cơ bản</li>
                   <li>Yoga trị liệu, phục hồi</li>

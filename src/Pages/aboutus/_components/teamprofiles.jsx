@@ -5,7 +5,8 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import PinterestIcon from '@mui/icons-material/Pinterest';
 import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 import CEO from "../../../Assets/Images/CEO_MinhTam.jpg"
-import Phat from "../../../Assets/Images/Member.jpg"
+import Phat from "../../../Assets/Images/CEO4.jpg"
+import CEO5 from "../../../Assets/Images/CEO5.jpg"
 
 const teamMembers = [
   {
@@ -17,14 +18,14 @@ const teamMembers = [
   {
     name: 'Minh Tâm',
     role: 'Giáo viên Yoga nhịp điệu',
-    description: 'kết hợp nhịp điệu âm nhạc với sự uyển chuyển của yoga, tạo nên một trải nghiệm độc đáo và đầy năng lượng cho học viên trong mỗi buổi tập',
+    description: 'Kết hợp nhịp điệu âm nhạc với sự uyển chuyển của yoga, tạo nên một trải nghiệm độc đáo và đầy năng lượng cho học viên trong mỗi buổi tập',
     img: CEO,
   },
   {
-    name: 'Tâm Tâm',
+    name: 'Minh Anh',
     role: 'Zumba Instructor',
     description: 'Với sự nhiệt huyết và chuyên môn cao, Lori luôn truyền cảm hứng để bạn vừa tập luyện, vừa tận hưởng niềm vui trên từng bước nhảy.',
-    img: CEO,
+    img: CEO5,
   },
 ];
 

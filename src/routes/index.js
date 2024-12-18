@@ -14,6 +14,7 @@ import blog from "../Pages/blog/blog";
 import AboutUs from "../Pages/aboutus/aboutus";
 import Calculate from "../Pages/calculate/page";
 import login from "../Pages/login/login"
+// import Register from "../Pages/register/register";
 
 const routes = [
     {
@@ -46,6 +47,11 @@ const routes = [
         page: login,
         isShowHeader: true,
     },
+    // {
+    //     path: '/register',
+    //     page: Register,
+    //     isShowHeader: true,
+    // },
     {
         path: '*',
         page: notfoundPage,
